@@ -1,11 +1,24 @@
+require("dotenv").config()
+
+const config = require("./config/site")
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    siteUrl: config.siteUrl,
+    title: config.title,
+    description: config.description,
+    author: config.author,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        token: config.githubApiToken,
+        graphQLQuery: config.githubApiQuery,
+        variables: config.githubApiVariables,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
