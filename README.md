@@ -64,9 +64,10 @@ https://gatsby-starter-github-api.netlify.com/
 ## Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lundgren2/gatsby-starter-github-api)
-_Note: Don't forget to add your ENV variable to netlify: https://www.netlify.com/docs/continuous-deployment/#environment-variables_
+
 
 ## Credits
 
 - [gatsby-source-github-api](https://www.gatsbyjs.org/packages/gatsby-source-github-api)
+
 - [github-buttons](https://github.com/ntkme/github-buttons)
