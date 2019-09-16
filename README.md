@@ -55,13 +55,19 @@ Heads up! GitHub's GraphQL Explorer makes use of your real, live, production dat
 
 [GitHub GraphQL API](https://developer.github.com/v4/explorer/?variables=%20%7B%0A%20%20%20%22number_of_repos%22%3A%203%0A%7D&query=query%28%24number_of_repos%3AInt%21%29%20%7B%0A%20%20viewer%20%7B%0A%20%20%20%20name%0A%20%20%20%20%20repositories%28last%3A%20%24number_of_repos%29%20%7B%0A%20%20%20%20%20%20%20nodes%20%7B%0A%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%7D%0A%20%20%20%7D%0A%7D%0A)
 
+
+## Demo
+
+https://gatsby-starter-github-api.netlify.com/
+
+
 ## Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lundgren2/gatsby-starter-github-api)
 
-_Note: Don't forget to add your ENV variable to netlify: https://www.netlify.com/docs/continuous-deployment/#environment-variables_
 
 ## Credits
 
 - [gatsby-source-github-api](https://www.gatsbyjs.org/packages/gatsby-source-github-api)
+
 - [github-buttons](https://github.com/ntkme/github-buttons)
