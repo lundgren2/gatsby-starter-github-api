@@ -12,11 +12,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-github-api`,
+      resolve: "gatsby-source-graphql",
       options: {
-        token: config.githubApiToken,
-        graphQLQuery: config.githubApiQuery,
-        variables: config.githubApiVariables,
+        typeName: "GitHub",
+        fieldName: "githubData",
+        url: "https://api.github.com/graphql",
+        headers: {
+          Authorization: `Bearer ${config.githubApiToken}`,
+        },
       },
     },
     {
