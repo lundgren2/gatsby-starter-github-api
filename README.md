@@ -7,7 +7,7 @@
   Gatsby Starter Github API
 </h1>
 
-This is an example sourcing data from [GitHub GraphQL API v4](https://developer.github.com/v4/) using [gatsby-source-github-api](https://www.gatsbyjs.org/packages/gatsby-source-github-api)
+This is an example sourcing data from [GitHub GraphQL API v4](https://developer.github.com/v4/) using [gatsby-source-graphql](https://www.gatsbyjs.org/packages/gatsby-source-graphql)
 
 ## How to use
 
@@ -68,6 +68,6 @@ https://gatsby-starter-github-api.netlify.com/
 
 ## Credits
 
-- [gatsby-source-github-api](https://www.gatsbyjs.org/packages/gatsby-source-github-api)
+- [gatsby-source-graphql](https://www.gatsbyjs.org/packages/gatsby-source-graphql)
 
 - [github-buttons](https://github.com/ntkme/github-buttons)
