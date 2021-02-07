@@ -1,33 +1,33 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-starter-github-api",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Gatsby project with this Github source starter based on gatsby-source-github-api",
+  "version": "0.2.0",
+  "author": "Tobias Lundgren <tobias@lundgren.design>",
   "dependencies": {
     "@githubprimer/octicons-react": "^8.5.0",
-    "gatsby": "^2.6.0",
+    "gatsby": "^2.32.0",
     "gatsby-image": "^2.1.0",
     "gatsby-plugin-manifest": "^2.1.1",
-    "gatsby-plugin-offline": "^2.1.1",
+    "gatsby-plugin-offline": "^3.10.0",
     "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-react-svg": "^2.1.1",
+    "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sharp": "^2.0.37",
     "gatsby-plugin-typography": "^2.2.13",
     "gatsby-source-filesystem": "^2.0.37",
     "gatsby-source-graphql": "^2.3.2",
     "gatsby-transformer-sharp": "^2.1.19",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-github-btn": "^1.0.5",
-    "react-helmet": "^5.2.1",
+    "react-helmet": "^6.1.0",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
     "typography-theme-github": "^0.16.19"
   },
   "devDependencies": {
-    "prettier": "^1.17.1"
+    "prettier": "^2.2.1"
   },
   "keywords": [
     "gatsby"
