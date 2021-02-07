@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-starter-github-api",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Gatsby project with this Github source starter based on gatsby-source-github-api",
+  "version": "0.2.0",
+  "author": "Tobias Lundgren <tobias@lundgren.design>",
   "dependencies": {
     "@githubprimer/octicons-react": "^8.5.0",
     "gatsby": "^2.32.0",
