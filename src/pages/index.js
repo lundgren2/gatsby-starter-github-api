@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
     avatarUrl,
     isHireable,
     repositories,
-  } = data.githubData.data.viewer
+  } = data.githubData.viewer
 
   return (
     <Layout>
@@ -55,34 +55,33 @@ export default IndexPage
 export const gitHubQuery = graphql`
   {
     githubData {
-      data {
-        viewer {
-          name
-          avatarUrl
-          isHireable
-          repositories {
-            nodes {
-              name
-              description
-              homepageUrl
-              resourcePath
-              forkCount
-              createdAt
-              updatedAt
-              languages {
-                edges {
-                  node {
-                    name
-                    color
-                  }
+      viewer {
+        name
+        avatarUrl
+        isHireable
+        resourcePath
+        repositories(last: 12, privacy: PUBLIC, orderBy: { field: STARGAZERS, direction: ASC } ) {
+          nodes {
+            name
+            description
+            homepageUrl
+            forkCount
+            createdAt
+            updatedAt
+            resourcePath
+            languages(last: 1, orderBy: { field: SIZE, direction: ASC } ) {
+              edges {
+                node {
+                  name
+                  color
                 }
               }
-              licenseInfo {
-                name
-              }
-              stargazers {
-                totalCount
-              }
+            }
+            licenseInfo {
+              name
+            }
+            stargazers {
+              totalCount
             }
           }
         }
